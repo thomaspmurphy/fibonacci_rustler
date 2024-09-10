@@ -26,8 +26,8 @@ defmodule FibonacciTest do
     IO.puts("Elixir Recursive time: #{elixir_rec_time} microseconds")
     IO.puts("Speedup (Rust Recursive vs Elixir Recursive): #{elixir_rec_time / rust_rec_time}x")
     IO.puts("Speedup (Rust Iterative vs Elixir Iterative): #{elixir_iter_time / rust_iter_time}x")
-    IO.puts("Speedup (Rust Recursive vs Elixir Iterative): #{elixir_iter_time / rust_rec_time}x")
-    IO.puts("Speedup (Rust Iterative vs Elixir Recursive): #{elixir_rec_time / rust_iter_time}x")
+    IO.puts("Speedup (Rust Iterative vs Rust Recursive): #{rust_rec_time / rust_iter_time}x")
+    IO.puts("Speedup (Elixir Iterative vs Elixir Recursive): #{elixir_rec_time / elixir_iter_time}x")
 
     assert rust_iter_result == elixir_rec_result
     assert rust_iter_result == elixir_iter_result

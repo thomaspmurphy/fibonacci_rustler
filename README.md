@@ -15,13 +15,21 @@ In contrast, the iterative implementation has a linear time complexity of $O(n)$
 Let's denote the time complexity of the recursive Fibonacci function as $T_{\text{rec}}(n)$ and the iterative Fibonacci function as $T_{\text{iter}}(n)$.
 
 For the recursive function:
-$$ T_{\text{rec}}(n) = T_{\text{rec}}(n-1) + T_{\text{rec}}(n-2) + O(1) $$
+$$
+T_{\text{rec}}(n) = T_{\text{rec}}(n-1) + T_{\text{rec}}(n-2) + O(1)
+$$
 
 This recurrence relation leads to an exponential growth:
-$$ T_{\text{rec}}(n) = O(2^n) $$
+$$
+T_{\text{rec}}(n) = O(2^n)
+$$
 
 For the iterative function:
-$$ T_{\text{iter}}(n) = O(n) $$
+$$
+T_{\text{iter}}(n) = O(n)
+$$
+
+This is because the iterative approach calculates the Fibonacci number by iterating from 0 to $n$, performing a constant amount of work in each iteration. Therefore, the total work done is proportional to $n$.
 
 ### Performance Comparison
 
