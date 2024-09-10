@@ -16,21 +16,21 @@ Let's denote the time complexity of the recursive Fibonacci function as $T_{\tex
 
 For the recursive function:
 
-$$
+```math
 T_{\text{rec}}(n) = T_{\text{rec}}(n-1) + T_{\text{rec}}(n-2) + O(1)
-$$
+```
 
 This recurrence relation leads to an exponential growth:
 
-$$
+```math
 T_{\text{rec}}(n) = O(2^n)
-$$
+```
 
 For the iterative function:
 
-$$
+```math
 T_{\text{iter}}(n) = O(n)
-$$
+```
 
 This is because the iterative approach calculates the Fibonacci number by iterating from 0 to $n$, performing a constant amount of work in each iteration. Therefore, the total work done is proportional to $n$.
 
